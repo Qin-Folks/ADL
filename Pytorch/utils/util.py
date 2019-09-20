@@ -26,6 +26,7 @@ from utils.util_loader import data_loader
 from utils.util_bbox import *
 from utils.util_cam import *
 
+
 def load_model(model, optimizer, args):
     if os.path.isfile(args.resume):
         if args.gpu == 0:

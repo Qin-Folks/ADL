@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
+
+cwd = os.getcwd()
+if 'u5505995' in cwd:
+    cuda_id = "2"
+else:
+    cuda_id = "0"
+
 import random
 import shutil
 import time

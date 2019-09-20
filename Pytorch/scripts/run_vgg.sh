@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 :<<'END'
 This is sample bash script for CUB-200-2011 dataset
 support model:
@@ -17,7 +18,7 @@ epoch=200
 decay=60
 model=vgg16_ADL
 server=tcp://127.0.0.1:12345
-batch=128
+batch=64
 wd=1e-4
 lr=0.001
 ADL_pos="3M 4M 53"
