@@ -121,7 +121,6 @@ class VGG(nn.Module):
     def get_cam(self):
         return self.feature_map, self.pred
 
-
     def _initialize_weights(self):
         for m in self.modules():
             if isinstance(m, nn.Conv2d):

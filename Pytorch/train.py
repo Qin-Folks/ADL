@@ -328,6 +328,8 @@ def train(train_loader, model, criterion, optimizer, epoch, args):
     stds = torch.reshape(torch.tensor(stds), (1, 3, 1, 1)).cuda(args.gpu)
 
     for i, (images, target) in enumerate(train_loader):
+        print('what is the size of the images: ', images.shape)
+        print('target: ', target)
         # measure data loading time
         data_time.update(time.time() - end)
 
